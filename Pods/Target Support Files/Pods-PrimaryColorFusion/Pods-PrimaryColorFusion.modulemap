@@ -1,0 +1,6 @@
+framework module Pods_PrimaryColorFusion {
+  umbrella header "Pods-PrimaryColorFusion-umbrella.h"
+
+  export *
+  module * { export * }
+}

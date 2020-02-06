@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_PrimaryColorFusion_PrimaryColorFusionUITests : NSObject
+@end
+@implementation PodsDummy_Pods_PrimaryColorFusion_PrimaryColorFusionUITests
+@end

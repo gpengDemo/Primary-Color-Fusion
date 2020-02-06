@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PrimaryColorCell" customModule="PrimaryColorFusion" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="650"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="650"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="content_bg" translatesAutoresizingMaskIntoConstraints="NO" id="w9T-0H-ant">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="650"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rgb" translatesAutoresizingMaskIntoConstraints="NO" id="F7u-Qz-EJ6">
+                        <rect key="frame" x="146.5" y="97.5" width="100" height="95"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RGB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dse-6u-Zg3">
+                        <rect key="frame" x="176.5" y="222.5" width="40" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDL-Df-zHp">
+                        <rect key="frame" x="70" y="256.5" width="258" height="251"/>
+                        <string key="text">The subtractive primary color is also known as the subtractive primary color. Generally, the color used when coloring with a reflective light source or pigment is a "subtractive" primary color system. The system contains three primary colors of yellow, cyan, and magenta, and is another set of "three primary colors" system. Other colors can be produced when the three primary colors are mixed. For example, a mixture of yellow and cyan can produce green, a mixture of yellow and magenta can produce red, and a mixture of magenta and cyan can produce blue.</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="yDL-Df-zHp" firstAttribute="top" secondItem="dse-6u-Zg3" secondAttribute="bottom" constant="10" id="7zu-IR-oES"/>
+                <constraint firstItem="F7u-Qz-EJ6" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ROR-5O-anE"/>
+                <constraint firstItem="w9T-0H-ant" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="U1F-Ve-zwA"/>
+                <constraint firstAttribute="trailing" secondItem="w9T-0H-ant" secondAttribute="trailing" id="Xnc-vJ-4rG"/>
+                <constraint firstAttribute="trailing" secondItem="yDL-Df-zHp" secondAttribute="trailing" constant="65" id="eHq-qj-Hpu"/>
+                <constraint firstItem="dse-6u-Zg3" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="hh9-mJ-06T"/>
+                <constraint firstItem="dse-6u-Zg3" firstAttribute="top" secondItem="F7u-Qz-EJ6" secondAttribute="bottom" constant="30" id="kXF-5o-dme"/>
+                <constraint firstAttribute="bottom" secondItem="w9T-0H-ant" secondAttribute="bottom" id="kgl-TJ-OvV"/>
+                <constraint firstItem="w9T-0H-ant" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lle-tw-mcn"/>
+                <constraint firstItem="yDL-Df-zHp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="70" id="rXe-0W-hQl"/>
+                <constraint firstItem="F7u-Qz-EJ6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="bottom" multiplier="100:667" id="twq-l6-x7e"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="398" height="650"/>
+            <connections>
+                <outlet property="contentLb" destination="yDL-Df-zHp" id="ETe-YR-EI4"/>
+                <outlet property="imgView" destination="F7u-Qz-EJ6" id="LVi-bR-ctS"/>
+                <outlet property="titleLb" destination="dse-6u-Zg3" id="Rbn-Dx-Hln"/>
+            </connections>
+            <point key="canvasLocation" x="258.39999999999998" y="304.04797601199402"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="content_bg" width="340" height="560"/>
+        <image name="rgb" width="100" height="95"/>
+    </resources>
+</document>

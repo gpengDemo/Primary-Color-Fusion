@@ -1,0 +1,20 @@
+PODS:
+  - IBAnimatable (6.0.0)
+  - SnapKit (5.0.1)
+
+DEPENDENCIES:
+  - IBAnimatable
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - IBAnimatable
+    - SnapKit
+
+SPEC CHECKSUMS:
+  IBAnimatable: d49f9fee0c401b5b08d31b77256b77fb067e0e92
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+
+PODFILE CHECKSUM: 30c0070d9e4d63c0a34b1468a3306f75e5c2df42
+
+COCOAPODS: 1.8.4

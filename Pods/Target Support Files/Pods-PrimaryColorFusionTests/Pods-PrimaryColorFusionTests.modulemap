@@ -1,0 +1,6 @@
+framework module Pods_PrimaryColorFusionTests {
+  umbrella header "Pods-PrimaryColorFusionTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
